@@ -74,5 +74,37 @@ DEFINE RULE TotalsChecks OF TYPE TotalsChecks AS
 TAGS WHEN MATCHED (TDS_TOTALS_MATCHED_BETWEEN_SALES_AND_TDSLEDGER) TAGS WHEN NOT MATCHED (TDS_TOTALS_UNMATCHED_BETWEEN_SALES_AND_TDSLEDGER)
 ```
 
+## Functions Reference:
+```
+equals(String, String)
+```
+
+```
+startsWith(String, String)
+```
+
+```
+contains(a: String, b: String) - If a contains b
+```
+
+```
+containsAny(a: String, b: String) - If a contains b or b contains a
+```
+
+```
+dateMatch(dateStringInAnyFormatA, dateStringInAnyFormatB, toleranceInDaysDefaultedToZero)
+```
+
+```
+fuzzyMatch(stringA, stringB, thresholdScoreLessThan1, ["stopWords1", "stopWords2"]) - stop words are optional
+```
+
+```
+valueWithinTolerance(numericValueA, numericValueB, numericTolerance)
+```
+
+
+
+
 Feedback welcome.
 
